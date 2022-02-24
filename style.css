@@ -282,6 +282,10 @@ nav ul a svg {
 		width: 100%;
 		max-width: 520px;
 	}
+
+	.curriculum .container .content {
+		text-align: center;
+	}
 }
 
 /* tablet */
