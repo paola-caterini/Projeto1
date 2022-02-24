@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola Caterini</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/logo.png" alt="logo">
+            <h2>Hello,</h2>
+            <h1 class="title-green">I'm Paola Caterini</h1>
+            <p>Estou cursando Sistemas de Informação na UFMS e me encantei com o universo da tecnologia. Buscando me desenvolver cada vez mais na stack Front End. </p>
+            <button onclick="window.open('https://api.whatsapp.com/send?phone=5567993450880')">Entre em contato</button>
+        </div>
+    </header>
+
+    <nav>
+        <img src="assets/logo.png" alt="logo">
+        <ul>
+            <a href="#aboutme"><i data-feather="user"></i>Sobre Mim</a>
+            <a href="#studying"><i data-feather="briefcase"></i>Estudando</a>
+            <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+            <a href="#contact"><i data-feather="send"></i>Contato</a>
+        </ul>
+    </nav>
+
+    <section id="aboutme" class="about-me">
+        <div class="container">
+            <h1 class="title-green">Sobre Mim</h1>
+            <p>Paulista morando em Mato Grosso do Sul. Tenho 25 anos. Sou formada em Processos Gerenciais e atualmente estou cursando Sistemas de Informação na UFMS.
+                Tive contato com algumas linguagens de programação durante o curso, e me encantei pelo desenvolvimento front end. Assim, estou focando os estudos em HTML, CSS e JavaScript.
+                <br><br>
+                Adoro aprender novas tecnologias e trabalho muito bem em grupo. Sempre pronta para novos desafios.
+            </p>
+        </div>
+
+        <div class="img-container">
+            <div class="line-green"></div>
+            <div class="line-dark"></div>
+            <img src="assets/foto.png" alt="profile pic">
+        </div>
+
+    </section>
+
+    <section id="studying" class="studying">
+        <h1 class="title-green">Estudando</h1>
+        <div class="studying-container">
+            <div class="studying-card">
+                <img src="assets/html.png" alt="Ícone HTML">
+                <h2>HTML 5</h2> 
+                <p>Linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web</p>
+            </div>
+            <div class="studying-card">
+                <img src="assets/css.png" alt="Ícone CSS">
+                <h2>CSS 3</h2> 
+                <p>Cascading Style Sheets, pela qual se define estilos para um projeto web</p>
+            </div>
+            <div class="studying-card">
+                <img src="assets/js.png" alt="Ícone JS">
+                <h2>JavaScript</h2> 
+                <p>Linguagem de programação que permite a implementação de itens complexos em páginas web</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <h1 class="title-green">Currículo</h1>
+        <div class="container">
+            <img class="curriculum-img" src="assets/curriculum.png" alt="imagem currículo">
+            <div class="content">
+                <div class="curriculum-info">
+                    <span>Nome</span><b>Paola Caterini</b>
+                    <span>Idade</span><b>25 anos</b>
+                    <span>Formação</span><b>Sistemas de Informação - UFMS</b>
+                    <span>Cidade</span><b>Campo Grande - MS</b>
+                    <span>E-mail</span><b>paola_caterini@hotmail.com</b>
+                    <span>Exp</span><b>HTML, CSS e JavaScript</b>
+                    <span>Idioma</span><b>Inglês - Avançado</b>
+                </div>
+                <button onclick="window.open('https://drive.google.com/file/d/1VVCQXMHAE4yCOT6KE-Iy0eQqoH0RqtUn/view?usp=sharing')">Baixe meu currículo completo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1 class="title-green">Vamos trabalhar juntos?</h1>
+        <p class="title-green">Se você quer que eu faça parte do seu time, entre em contato comigo!</p>
+        <button onclick="window.open('https://api.whatsapp.com/send?phone=5567993450880')">Entre em contato</button>
+    </section>
+    
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

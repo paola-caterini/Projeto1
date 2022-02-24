@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,100;1,200;1,600&display=swap");
+
+:root {
+	--bg-dark: #567663;
+	--green: #18392b;
+	--red: #52bf90;
+	--light-grey: #e5e6eb;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	margin: 0;
+	background: var(--bg-dark);
+	color: white;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	color: var(--light-grey);
+	font-size: 20px;
+}
+
+button {
+	background: var(--red);
+	border: 0;
+	border-radius: 16px;
+	padding: 8px 35px;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--green);
+	cursor: pointer;
+}
+
+.title-green {
+	color: var(--green);
+}
+
+header {
+	height: calc(100vh - 65px);
+	display: flex;
+	align-items: center;
+}
+
+header .container {
+	width: 50%;
+	padding: 0 100px;
+	height: fit-content;
+}
+
+header .container img {
+	display: none;
+}
+
+header .container button {
+	margin-top: 40px;
+}
+
+nav {
+	display: flex;
+	height: 65px;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--bg-dark);
+	padding: 0 100px;
+	position: sticky;
+	top: 0;
+	font-weight: bold;
+	z-index: 99;
+}
+
+nav img {
+	height: 45px;
+}
+
+nav ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul a {
+	font-size: 22px;
+	text-decoration: none;
+	color: var(--green);
+}
+
+nav ul a svg {
+	display: none;
+}
+
+.about-me {
+	display: flex;
+	padding: 100px;
+}
+
+.about-me .container {
+	width: 50%;
+	padding-right: 50px;
+}
+
+.about-me .img-container {
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+
+.about-me .img-container img {
+	width: 70%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-me .img-container .line-green {
+	width: calc(70% + 50px);
+	height: calc(100% + 50px);
+	border: 1px solid var(--green);
+
+	position: absolute;
+	top: -25px;
+	left: calc(50% - 70% / 2 - 25px);
+}
+
+.studying {
+	text-align: center;
+	margin: 150px 0;
+	padding: 0 100px;
+}
+
+.studying-container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 60px auto 0;
+}
+
+.studying .studying-container .studying-card {
+	max-width: 360px;
+	background: #75a086;
+	border: 1px solid var(--green);
+	border-radius: 16px;
+	padding: 40px 25px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.studying .studying-container .studying-card h2 {
+	color: var(--green);
+}
+
+.studying .studying-container .studying-card img {
+	margin-bottom: 40px;
+	max-width: 45px;
+	max-height: 45px;
+}
+
+.studying-card + .studying-card {
+	margin-left: 10px;
+}
+
+.curriculum {
+	padding: 0 100px;
+	text-align: center;
+}
+
+.curriculum .container {
+	display: flex;
+	margin: 50px auto;
+	max-width: 1200px;
+}
+
+.curriculum .container .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	align-items: center;
+	width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+	display: grid;
+	grid-template-columns: 150px auto;
+	grid-gap: 1rem;
+	margin-bottom: 50px;
+}
+
+.contact {
+	max-width: 700px;
+	margin: 150px auto;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.contact button {
+	margin: 40px auto;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+	header .container {
+		width: 100%;
+	}
+
+	nav ul a {
+		font-size: 18px;
+	}
+
+	nav {
+		padding: 0 30px;
+	}
+
+	.about-me {
+		flex-direction: column;
+	}
+
+	.about-me .container,
+	.about-me .img-container {
+		width: 100%;
+	}
+
+	.about-me .container {
+		padding-right: 0;
+	}
+
+	.about-me .img-container {
+		margin: 70px 0;
+	}
+
+	.studying {
+		padding: 0;
+	}
+
+	.studying .studying-container {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.studying-card {
+		height: 394px;
+	}
+
+	.studying-card + .studying-card {
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	.curriculum .container {
+		flex-wrap: wrap;
+	}
+
+	.curriculum .container .curriculum-img {
+		display: block;
+		margin: 0 auto 50px;
+		width: 100%;
+		max-width: 520px;
+	}
+}
+
+/* tablet */
+
+@media (max-width: 767px) {
+	header .container img {
+		display: inline;
+		margin-bottom: 70px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul a {
+		font-size: 16px;
+	}
+}
+
+/* celular */
+
+@media (max-width: 480px) {
+	header .container {
+		padding: 0 40px;
+	}
+
+	nav {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		top: unset;
+		padding: 0 15px;
+	}
+
+	nav ul a {
+		font-size: 12px;
+	}
+
+	nav ul a svg {
+		display: block;
+		margin: 0 auto 10px;
+	}
+
+	.about-me {
+		padding: 40px;
+	}
+
+	.studying {
+		margin: 70px 0;
+	}
+
+	.studying .studying-container {
+		padding: 0 20px;
+	}
+
+	.curriculum {
+		padding: 0 20px;
+	}
+
+	.curriculum .container .content .curriculum-info {
+		padding: 0 15px;
+	}
+}
